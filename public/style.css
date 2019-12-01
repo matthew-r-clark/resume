@@ -8,6 +8,7 @@ html {
 body {
   box-sizing: border-box;
   width: 850px;
+  min-width: 400px;
   padding: 50px 100px 25px 100px;
   margin: auto;
   box-shadow: 0 0 15px gray;
@@ -99,7 +100,7 @@ ul, .row, #education .content {
   width: 20px;
 }
 
-@media only screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {
   body {
     width: 100%;
     padding: 25px;
@@ -115,5 +116,20 @@ ul, .row, #education .content {
 
   dd {
     position: static;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .spacer {
+    display: none;
+  }
+
+  #phone, #email, #github {
+    display: block;
+  }
+
+  #phone {
+    margin-top: 25px;
+    margin-bottom: 7px;
   }
 }
