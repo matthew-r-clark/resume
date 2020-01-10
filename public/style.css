@@ -8,9 +8,9 @@ html {
 
 body {
   box-sizing: border-box;
-  width: 850px;
+  width: 8.8in;
   min-width: 400px;
-  padding: 50px 100px 25px 100px;
+  padding: .5in 1in;
   margin: auto;
   box-shadow: 0 0 15px gray;
   border-left: 1px solid rgb(160, 160, 160);
@@ -52,7 +52,7 @@ dt {
   font-family: Arial, sans-serif;
   text-align: right;
   position: relative;
-  right: 660px;
+  right: 6.85in;
   bottom: 10px;
 }
 
@@ -153,9 +153,14 @@ ul, .row, #education .content {
     box-shadow: none;
     border: none;
     width: 8.5in;
+    padding: .5in .9in;
   }
 
   dt {
-    right: 625px;
+    right: 650px;
+  }
+
+  .container {
+    page-break-inside: avoid;
   }
 }
