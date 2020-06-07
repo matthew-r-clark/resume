@@ -72,6 +72,7 @@ ul, .row, #education .content {
   margin-bottom: 5px;
 }
 
+
 .container {
   margin-bottom: 20px;
 }
@@ -108,8 +109,12 @@ ul, .row, #education .content {
 #github-icon, #heroku-icon {
   position: relative;
   top: 2px;
-  padding: 0 5px;
-  height: 15px;
+  padding: 0 3px;
+  height: 30px;
+}
+
+#heroku-icon {
+  height: 20px;
 }
 
 @media screen and (max-width: 850px) {
