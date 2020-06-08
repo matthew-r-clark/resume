@@ -164,6 +164,14 @@ ul, .row, #education .content {
     margin-top: 25px;
     margin-bottom: 7px;
   }
+
+  #projects dd {
+    position: static;
+  }
+  
+  #designs dd {
+    position: static;
+  }
 }
 
 @media print {
