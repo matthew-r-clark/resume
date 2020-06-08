@@ -85,7 +85,6 @@ ul, .row, #education .content {
 .row-left {
   display:flex;
   justify-content: left;
-
 }
 
 .row-left a {
@@ -106,7 +105,7 @@ ul, .row, #education .content {
   text-align: left;
 }
 
-#github-icon, #heroku-icon {
+#github-icon, #heroku-icon, #drive-icon {
   position: relative;
   top: 2px;
   padding: 0 3px;
@@ -115,6 +114,20 @@ ul, .row, #education .content {
 
 #heroku-icon {
   height: 20px;
+}
+
+#drive-icon {
+  height: 20px;
+}
+
+#projects dd {
+  position: relative;
+  top: -42px;
+}
+
+#designs dd {
+  position: relative;
+  top: -32px;
 }
 
 @media screen and (max-width: 850px) {
@@ -165,7 +178,10 @@ ul, .row, #education .content {
     right: 650px;
   }
 
-  .container {
-    page-break-inside: avoid;
+  #experience {
+    position: relative;
+    top: 15px;
   }
+
+
 }
