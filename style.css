@@ -100,7 +100,7 @@ ul, .row, #education .content {
   text-align: left;
 }
 
-.job-role {
+.job-role, .project-section {
   text-decoration: underline;
   text-align: left;
 }
