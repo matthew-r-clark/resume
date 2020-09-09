@@ -23,6 +23,15 @@ header, #summary {
   margin-bottom: 40px;
 }
 
+#summary {
+  text-align: left;
+}
+
+.indented-list {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
 h1 {
   font-size: 60px;
   font-family: Arial, sans-serif;
@@ -42,10 +51,6 @@ a {
 a:hover {
   text-decoration: underline;
   color: black;
-}
-
-p {
-  margin-bottom: 10px;
 }
 
 dt {
