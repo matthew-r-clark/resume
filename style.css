@@ -32,6 +32,11 @@ header, #summary {
   margin-bottom: 5px;
 }
 
+em {
+  /* font-weight: 600; */
+  font-style: italic;
+}
+
 h1 {
   font-size: 60px;
   font-family: Arial, sans-serif;
