@@ -3,7 +3,7 @@ $(function() {
 
   let $dijkstraDemo = $('#dijkstra-demo');
   let $dijkstraButton = $('#dijkstra-demo-button');
-  let buttonText = $dijkstraButton.text();
+  let buttonContents = $dijkstraButton.html();
   $dijkstraButton.click(event => {
     if ($dijkstraDemo.children().length === 0) {
       let $iframe = $(document.createElement('iframe'));
@@ -16,7 +16,7 @@ $(function() {
       $dijkstraButton.text('Close Demo');
     } else {
       $dijkstraDemo.empty();
-      $dijkstraButton.text(buttonText);
+      $dijkstraButton.html(buttonContents);
     }
   });
 });

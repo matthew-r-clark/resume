@@ -48,6 +48,19 @@ h3 {
   text-align: left;
 }
 
+button {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  font-weight: normal;
+}
+
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 iframe {
   width: 100%;
   border-radius: 10px;
@@ -130,6 +143,12 @@ ul, .row, #education .content {
 
 #heroku-icon {
   height: 20px;
+}
+
+#down-arrow-icon {
+  height: 15px;
+  position: relative;
+  top: 2px;
 }
 
 #drive-icon {
