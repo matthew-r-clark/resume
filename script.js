@@ -1,21 +1,3 @@
-// window.addEventListener('DOMContentLoaded', function() {
-//   var links = document.querySelectorAll("a");
-
-//   for (var i = 0; i < links.length; i += 1) {
-//     links[i].setAttribute("target", "blank");
-//   }
-
-//   let dijkstraDemo = document.getElementById('dijkstra-demo');
-//   dijkstraDemo.addEventListener('click', function(event) {
-//     if (dijkstraDemo.children.length === 0) {
-//       // add iframe
-//       let iframe = 
-//     } else {
-//       // remove iframe
-//     }
-//   });
-// });
-
 $(function() {
   $('a').attr("target", "blank");
 
