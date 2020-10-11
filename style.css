@@ -48,6 +48,12 @@ h3 {
   text-align: left;
 }
 
+iframe {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
 a {
   text-decoration: none;
   color: rgb(50, 50, 50);
