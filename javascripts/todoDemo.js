@@ -38,4 +38,26 @@ $(function() {
       $hideTodoDemo.toggle(false);
     });
   }
+
+  function setPlayerHeight(height) {
+    $('#todo-player').height(height);
+  }
+
+  function calcPlayerHeightFromWidth(width) {
+    return Math.round(width * .5969);
+  }
+
+  let previousWidth;
+  let $projects = $('#projects');
+  function resizePlayerHeight() {
+    let width = $projects.width();
+    if (width != previousWidth) {
+      let newHeight = calcPlayerHeightFromWidth(width);
+      setPlayerHeight(newHeight);
+      previousWidth = width;
+    }
+  }
+
+  window.addEventListener('resize', resizePlayerHeight);
+  window.addEventListener('load', resizePlayerHeight);
 });
