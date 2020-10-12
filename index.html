@@ -112,7 +112,19 @@
           <h3>Todo Manager
             <a href="https://github.com/matthew-r-clark/full-stack-fundamentals"><img id="github-icon" alt="octocat" src="./images/github.png" />Source</a>
             <a href="http://mclark-todo-app.herokuapp.com/"><img id="heroku-icon" alt="heroku" src="./images/heroku.png" />App</a>
+            <button id="show-todo-demo"><img id="down-arrow-icon" alt="expand" src="./images/down-arrow.png" /> Demo</button>
+            <button id="hide-todo-demo" style="display: none;">Close Demo</button>
           </h3>
+        </div>
+        <div id="todo-demo" style="display: none;">
+          <iframe id="player"
+                  width="650"
+                  height="388"
+                  src="https://www.youtube.com/embed/pL4RxMH6H78?enablejsapi=1&origin=https://matthew-r-clark.github.io/"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen>
+          </iframe>
         </div>
         <div class="content">
           <div class="row">
@@ -142,12 +154,12 @@
           <h3>Help Matt Get Home!
             <a href="https://github.com/matthew-r-clark/dijkstra_implementation"><img id="github-icon" alt="octocat" src="./images/github.png" />Source</a>
             <a href="https://matthew-r-clark.github.io/dijkstra_implementation/"><img id="github-icon" alt="octocat" src="./images/github-pages.png" />App</a>
-            <button id="show-demo-button"><img id="down-arrow-icon" alt="expand" src="./images/down-arrow.png" /> Inline</button>
-            <button id="hide-demo-button" style="display: none;">Close Demo</button>
+            <button id="show-dijkstra-demo"><img id="down-arrow-icon" alt="expand" src="./images/down-arrow.png" /> Demo</button>
+            <button id="hide-dijkstra-demo" style="display: none;">Close Demo</button>
           </h3>
         </div>
 
-        <div id="demo-container" style="display: none;"></div>
+        <div id="dijkstra-demo" style="display: none;"></div>
         <div class="content">
           <ul>
             <li>Shortest path implementation utilizing <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's algorithm</a> in JavaScript using jQuery.</li>

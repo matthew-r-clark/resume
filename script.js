@@ -1,35 +1,27 @@
 $(function() {
   $('a').attr("target", "blank");
 
-  let $buttons = $('button');
-  let $demoContainer = $('#demo-container');
-  let $showDemoButton = $('#show-demo-button');
-  let $hideDemoButton = $('#hide-demo-button');
-  let $iframe;
+  let $dijkstraDemoContainer = $('#dijkstra-demo');
+  let $showDemoButton = $('#show-dijkstra-demo');
+  let $hideDemoButton = $('#hide-dijkstra-demo');
 
-  $buttons.click(toggleDemo);
-
-  function toggleDemo(event) {
-    if (!$iframe) {
-      addIframeAndShowContainer();
-    } else {
-      hideContainerAndDestoryIframe();
-    }
-  }
+  $showDemoButton.click(addIframeAndShowContainer);
+  $hideDemoButton.click(hideContainerAndDestoryIframe);
 
   function addIframeAndShowContainer() {
-    addIframe();
-    showContainer();
+    addDijkstraIframe();
+    showDijkstraContainer();
   }
 
-  function addIframe() {
-    $iframe = buildIframe();
-    $demoContainer.append($iframe);
+  function addDijkstraIframe() {
+    $iframe = buildDijkstraIframe();
+    $dijkstraDemoContainer.append($iframe);
   }
 
-  function buildIframe() {
+  function buildDijkstraIframe() {
     let $iframe = $(document.createElement('iframe'));
     $iframe.attr({
+      id: 'dijkstra-iframe',
       src: "https://matthew-r-clark.github.io/dijkstra_implementation/",
       frameborder: "0",
       scrolling: "no",
@@ -39,23 +31,55 @@ $(function() {
     return $iframe;
   }
 
-  function showContainer() {
-    $demoContainer.slideToggle(() => {
+  function showDijkstraContainer() {
+    $dijkstraDemoContainer.slideToggle(() => {
       $showDemoButton.toggle(false);
       $hideDemoButton.toggle(true);
     });
   }
 
   function hideContainerAndDestoryIframe() {
-    $demoContainer.slideToggle(() => {
-      destroyIframe();
+    $dijkstraDemoContainer.slideToggle(() => {
+      destroyDijkstraIframe();
       $showDemoButton.toggle(true);
       $hideDemoButton.toggle(false);
     });
   }
 
-  function destroyIframe() {
-    $iframe.remove();
-    $iframe = undefined;
+  function destroyDijkstraIframe() {
+    $('#dijkstra-iframe').remove();
+  }
+
+  let player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {});
+  }
+
+  function stopVideo() {
+    if (player && player.stopVideo) {
+      player.stopVideo();
+    }
+  }
+
+  let $todoDemoContainer = $('#todo-demo');
+  let $showTodoDemo = $('#show-todo-demo');
+  let $hideTodoDemo = $('#hide-todo-demo');
+
+  $showTodoDemo.click(showTodoContainer);
+  $hideTodoDemo.click(hideTodoContainer);
+
+  function showTodoContainer() {
+    $todoDemoContainer.slideToggle(() => {
+      $showTodoDemo.toggle(false);
+      $hideTodoDemo.toggle(true);
+    });
+  }
+
+  function hideTodoContainer() {
+    stopVideo();
+    $todoDemoContainer.slideToggle(() => {
+      $showTodoDemo.toggle(true);
+      $hideTodoDemo.toggle(false);
+    });
   }
 });
