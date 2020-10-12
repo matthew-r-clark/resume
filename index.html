@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="https://secure.webtoolhub.com/static/resources/icons/set103/9072d489.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascripts/script.js"></script>
+  <script src="javascripts/dijkstraDemo.js"></script>
   <script src="https://matthew-r-clark.github.io/pane-management/babel/paneManager.min.js"></script>
 </head>
 <body>
@@ -117,14 +119,7 @@
           </h3>
         </div>
         <div id="todo-demo" style="display: none;">
-          <iframe id="player"
-                  width="650"
-                  height="388"
-                  src="https://www.youtube.com/embed/pL4RxMH6H78?enablejsapi=1&origin=https://matthew-r-clark.github.io/"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen>
-          </iframe>
+          <div id="todo-player"></div>
         </div>
         <div class="content">
           <div class="row">
@@ -295,6 +290,6 @@
       </div>
     </dd>
   </dl>
-  <script src="script.js"></script>
+  <script src="javascripts/todoDemo.js"></script>
 </body>
 </html>
