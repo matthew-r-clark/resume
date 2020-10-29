@@ -6,7 +6,8 @@ $(function() {
   $showDemoButton.click(addIframeAndShowContainer);
   $hideDemoButton.click(hideContainerAndDestoryIframe);
 
-  function addIframeAndShowContainer() {
+  function addIframeAndShowContainer(event) {
+    event.preventDefault();
     addDijkstraIframe();
     showDijkstraContainer();
   }
@@ -24,7 +25,7 @@ $(function() {
       frameborder: "0",
       scrolling: "no",
       height: "468",
-      "height-dynamic": true,
+      "pane-management": true,
     });
     return $iframe;
   }
@@ -36,7 +37,8 @@ $(function() {
     });
   }
 
-  function hideContainerAndDestoryIframe() {
+  function hideContainerAndDestoryIframe(event) {
+    event.preventDefault();
     $dijkstraDemoContainer.slideToggle(() => {
       destroyDijkstraIframe();
       $showDemoButton.toggle(true);
