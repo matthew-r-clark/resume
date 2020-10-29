@@ -2,41 +2,13 @@ $(function() {
   let $linkCurrentlyHasMouse;
   let $linkCurrentlyFlashed;
 
-  const SECONDS = 1000;
-  const LINK_SPACING_DELAY = 0.5 * SECONDS;
-  const LINK_FLASH_INTERVAL = 30 * SECONDS;
-
   let $links = $('a');
-  $links.attr("target", "blank");
-
-  $links.addClass('highlight');
   $links.each(index => {
-    toggleIcon($($links[index]), true);
+    let $link = $($links[index]);
+    if (!$link.attr('target')) {
+      $link.attr("target", "blank");
+    }
   });
-  setTimeout(() => {
-    $links.removeClass('highlight');
-    $links.each(index => {
-      toggleIcon($($links[index]), false);
-    });
-  }, 500);
-
-  setInterval(() => {
-    let delay = 0;
-    $links.each(index => {
-      let $link = $($links[index]);
-      delay += 100;
-      setTimeout(() => {
-        $link.addClass('highlight');
-        toggleIcon($link, true);
-        $linkCurrentlyFlashed = $link;
-        setTimeout(() => {
-          $link.removeClass('highlight');
-          toggleIcon($link, false);
-          $linkCurrentlyFlashed = undefined;
-        }, LINK_SPACING_DELAY);
-      }, delay);
-    });
-  }, LINK_FLASH_INTERVAL);
 
 
   let $iconLinks = $('.icon-link');
@@ -75,12 +47,12 @@ $(function() {
   }
 
   $('#pane-management-anchor').click(event => {
-    callAttentionToElement(document.getElementById('pane-management'), 2000);
+    callAttentionToElement(document.getElementById('pane-management'), 1000);
   });
 
   function callAttentionToElement(element, milliseconds) {
     let $element = $(element);
-    $element.attr('style', 'background-color: rgb(80, 162, 240);; border-radius: 10px;');
+    $element.attr('style', 'background-color: rgba(0, 0, 0, 0.15);; border-radius: 10px;');
     setTimeout(() => {
       $element.attr('style', 'background-color: none;');
     }, milliseconds);
