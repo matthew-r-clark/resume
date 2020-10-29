@@ -48,19 +48,6 @@ h3 {
   text-align: left;
 }
 
-button {
-  border: none;
-  background-color: inherit;
-  color: inherit;
-  font: inherit;
-  font-weight: normal;
-}
-
-button:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 iframe {
   width: 100%;
   border-radius: 10px;
@@ -72,9 +59,9 @@ a {
   color: rgb(50, 50, 50);
 }
 
-a:hover {
+a:hover, .highlight {
+  color: rgb(80, 162, 240);
   text-decoration: underline;
-  color: black;
 }
 
 dt {
@@ -95,6 +82,7 @@ ul {
   list-style: disc;
   position: relative;
   left: 16px;
+  width: 97%;
 }
 
 ul, .row, #education .content {
@@ -134,25 +122,31 @@ ul, .row, #education .content {
   text-align: left;
 }
 
-#github-icon, #heroku-icon, #drive-icon {
+.icon {
   position: relative;
   top: 2px;
   padding: 0 3px;
   height: 30px;
 }
 
-#heroku-icon {
+.heroku-icon, .drive-icon {
   height: 20px;
 }
 
-#down-arrow-icon {
+.down-arrow-icon {
   height: 15px;
   position: relative;
   top: 2px;
 }
 
-#drive-icon {
-  height: 20px;
+.up-arrow-icon {
+  height: 15px;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.highlight-icon {
+  display: none;
 }
 
 #projects dd {
@@ -163,6 +157,15 @@ ul, .row, #education .content {
 #designs dd {
   position: relative;
   top: -32px;
+}
+
+#hide-todo-demo, #hide-dijkstra-demo {
+  display: none;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 850px) {
@@ -225,6 +228,4 @@ ul, .row, #education .content {
     position: relative;
     top: 15px;
   }
-
-
 }
