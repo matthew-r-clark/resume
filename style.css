@@ -32,14 +32,9 @@ header, #summary {
   margin-bottom: 5px;
 }
 
-em {
-  /* font-weight: 600; */
-  font-style: italic;
-}
-
 h1 {
   font-size: 60px;
-  font-family: Arial, sans-serif;
+  font-family: 'Google Sans', Arial, sans-serif;
 }
 
 h3 {
@@ -55,17 +50,17 @@ iframe {
 }
 
 a {
+  font-style: italic;
   text-decoration: none;
   color: rgb(50, 50, 50);
 }
 
 a:hover, .highlight {
   color: rgb(80, 162, 240);
-  text-decoration: underline;
 }
 
 dt {
-  font-family: Arial, sans-serif;
+  font-family: 'Google Sans', Arial, sans-serif;
   text-align: right;
   position: relative;
   right: 6.85in;
@@ -117,7 +112,7 @@ ul, .row, #education .content {
   text-align: left;
 }
 
-.job-role, .project-section {
+.subsection-title {
   text-decoration: underline;
   text-align: left;
 }
