@@ -31,19 +31,16 @@ $(function() {
   }
 
   function showDijkstraContainer() {
-    $dijkstraDemoContainer.slideToggle(() => {
-      $showDemoButton.toggle(false);
-      $hideDemoButton.toggle(true);
-    });
+    $dijkstraDemoContainer.slideToggle();
+    $showDemoButton.toggle(false);
+    $hideDemoButton.toggle(true);
   }
 
   function hideContainerAndDestoryIframe(event) {
     event.preventDefault();
-    $dijkstraDemoContainer.slideToggle(() => {
-      destroyDijkstraIframe();
-      $showDemoButton.toggle(true);
-      $hideDemoButton.toggle(false);
-    });
+    $dijkstraDemoContainer.slideToggle(destroyDijkstraIframe);
+    $showDemoButton.toggle(true);
+    $hideDemoButton.toggle(false);
   }
 
   function destroyDijkstraIframe() {

@@ -26,19 +26,17 @@ $(function() {
 
   function showTodoContainer(event) {
     event.preventDefault();
-    $todoDemoContainer.slideToggle(() => {
-      $showTodoDemo.toggle(false);
-      $hideTodoDemo.toggle(true);
-    });
+    $todoDemoContainer.slideToggle();
+    $showTodoDemo.toggle(false);
+    $hideTodoDemo.toggle(true);
   }
 
   function hideTodoContainer(event) {
     event.preventDefault();
     stopVideo();
-    $todoDemoContainer.slideToggle(() => {
-      $showTodoDemo.toggle(true);
-      $hideTodoDemo.toggle(false);
-    });
+    $todoDemoContainer.slideToggle();
+    $showTodoDemo.toggle(true);
+    $hideTodoDemo.toggle(false);
   }
 
   function setPlayerHeight(height) {
