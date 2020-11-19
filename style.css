@@ -50,8 +50,6 @@ iframe {
 }
 
 a {
-  font-style: italic;
-  text-decoration: none;
   color: rgb(50, 50, 50);
 }
 
@@ -113,7 +111,7 @@ ul, .row, #education .content {
 }
 
 .subsection-title {
-  text-decoration: underline;
+  font-style: italic;
   text-align: left;
 }
 
