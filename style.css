@@ -19,8 +19,13 @@ body {
   background-color: #fff;
 }
 
-header, #summary {
-  margin-bottom: 40px;
+header {
+  margin-bottom: 20px;
+}
+
+section {
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 #summary {
@@ -35,6 +40,11 @@ header, #summary {
 h1 {
   font-size: 60px;
   font-family: 'Google Sans', Arial, sans-serif;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 h3 {
@@ -63,11 +73,7 @@ dt {
   position: relative;
   right: 6.85in;
   bottom: 10px;
-}
-
-dd {
-  position: relative;
-  bottom: 26px;
+  top: 16px;
 }
 
 ul {
@@ -76,20 +82,21 @@ ul {
   position: relative;
   left: 16px;
   width: 97%;
-}
-
-ul, .row, #education .content {
   margin-bottom: 5px;
 }
 
-
-.container {
+.sub-section {
   margin-bottom: 20px;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#skills .row {
+  justify-content: left;
 }
 
 .row-left {
@@ -98,20 +105,18 @@ ul, .row, #education .content {
 }
 
 .row-left a {
-  padding: 0 5px;
+  padding-left: 10px;
   font-weight: normal;
-}
-
-#skills .row {
-  justify-content: left;
 }
 
 .content {
   text-align: left;
+  margin-bottom: 5px;
 }
 
 .subsection-title {
   font-style: italic;
+  font-weight: bold;
   text-align: left;
 }
 
@@ -142,14 +147,12 @@ ul, .row, #education .content {
   display: none;
 }
 
-#projects dd {
-  position: relative;
-  top: -42px;
+#projects dt {
+  top: 33px;
 }
 
-#designs dd {
-  position: relative;
-  top: -32px;
+#designs dt {
+  top: 24px;
 }
 
 #hide-todo-demo, #hide-dijkstra-demo {
@@ -177,7 +180,7 @@ code {
     margin: 20px 0;
   }
 
-  dd {
+  #projects dd, #designs dd {
     position: static;
   }
 }
@@ -194,14 +197,6 @@ code {
   #phone {
     margin-top: 25px;
     margin-bottom: 7px;
-  }
-
-  #projects dd {
-    position: static;
-  }
-  
-  #designs dd {
-    position: static;
   }
 }
 
