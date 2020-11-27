@@ -82,36 +82,32 @@ ul {
   position: relative;
   left: 16px;
   width: 97%;
-  margin-bottom: 5px;
 }
 
-.sub-section {
+.subsection {
   margin-bottom: 20px;
+  text-align: left;
 }
 
-.row {
+.flex-row-spread {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-#skills .row {
+#skills .flex-row-spread {
   justify-content: left;
 }
 
-.row-left {
+.flex-row-left {
   display:flex;
   justify-content: left;
+  margin-bottom: 5px;
 }
 
-.row-left a {
+.flex-row-left a {
   padding-left: 10px;
   font-weight: normal;
-}
-
-.content {
-  text-align: left;
-  margin-bottom: 5px;
 }
 
 .subsection-title {
@@ -120,14 +116,18 @@ ul {
   text-align: left;
 }
 
+.content-item {
+  margin-bottom: 5px;
+}
+
+.content-item:last-child {
+  margin-bottom: 0;
+}
+
 .icon {
   position: relative;
   top: 2px;
   padding: 0 3px;
-  height: 30px;
-}
-
-.heroku-icon, .drive-icon {
   height: 20px;
 }
 
@@ -148,7 +148,7 @@ ul {
 }
 
 #projects dt {
-  top: 33px;
+  top: 23px;
 }
 
 #designs dt {
@@ -178,10 +178,6 @@ code {
     font-size: 20px;
     font-weight: bold;
     margin: 20px 0;
-  }
-
-  #projects dd, #designs dd {
-    position: static;
   }
 }
 
