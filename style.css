@@ -25,7 +25,7 @@ header {
 
 section {
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 #summary {
@@ -51,6 +51,14 @@ h3 {
   font-weight: bold;
   margin-right: 10px;
   text-align: left;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 3px;
 }
 
 iframe {
@@ -85,14 +93,13 @@ ul {
 }
 
 .subsection {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: left;
 }
 
 .flex-row-spread {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5px;
 }
 
 #skills .flex-row-spread {
@@ -102,7 +109,6 @@ ul {
 .flex-row-left {
   display:flex;
   justify-content: left;
-  margin-bottom: 5px;
 }
 
 .flex-row-left a {
@@ -110,14 +116,8 @@ ul {
   font-weight: normal;
 }
 
-.subsection-title {
-  font-style: italic;
-  font-weight: bold;
-  text-align: left;
-}
-
 .content-item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .content-item:last-child {
